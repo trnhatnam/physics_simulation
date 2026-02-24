@@ -1,21 +1,35 @@
 #include <SFML/Graphics.hpp>
+#include "pendule.h"
 
 int main()
 {
-	sf::RenderWindow window( sf::VideoMode( { 200, 200 } ), "SFML works!" );
-	sf::CircleShape shape( 100.f );
-	shape.setFillColor( sf::Color::Green );
 
-	while ( window.isOpen() )
-	{
-		while ( const std::optional event = window.pollEvent() )
-		{
-			if ( event->is<sf::Event::Closed>() )
-				window.close();
-		}
 
-		window.clear();
-		window.draw( shape );
-		window.display();
-	}
+    // create the window
+    sf::RenderWindow window(sf::VideoMode({1280, 720}), "My simulation");
+
+
+	// création de la pendule
+	Pendule p1({640,100});
+
+    // run the program as long as the window is open
+    while (window.isOpen())
+    {
+        // check all the window's events that were triggered since the last iteration of the loop
+        while (const std::optional event = window.pollEvent())
+        {
+            // "close requested" event: we close the window
+            if (event->is<sf::Event::Closed>())
+                window.close();
+        }
+
+        // clear the window with black color
+        window.clear(sf::Color::Black);
+
+        // draw everything here...
+        window.draw(p1);
+
+        // end the current frame
+        window.display();
+    }
 }
