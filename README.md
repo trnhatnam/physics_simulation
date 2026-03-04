@@ -1,6 +1,7 @@
 Simulation d'un pendule simple
 
 
+J'ai utilisé VSCode sur Windows pour lancer mon programme :
 
 1/ Compilation : cmake --build build<br>
 2/ Exécution du programme C++ : bin/main.exe<br>
@@ -9,5 +10,5 @@ Simulation d'un pendule simple
 ![Test](pendule_1.png)
 
 TODO : 
-- ajouter frottement de l'air
-- utiliser RK4
+- ajouter les frottements de l'air
+- utiliser la méthode RK4
