@@ -10,5 +10,5 @@ J'ai utilisé VSCode sur Windows pour lancer mon programme :
 ![Test](pendule_1.png)
 
 TODO : 
-- ajouter les frottements de l'air
-- utiliser la méthode RK4
+- ~~ajouter les frottements de l'air~~
+- ~~utiliser la méthode RK4~~
