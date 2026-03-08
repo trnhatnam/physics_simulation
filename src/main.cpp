@@ -51,9 +51,9 @@ int main()
     float v = p1.getAngle();
     
     // paramètres
-    float gamma = 0.01;
+    float gamma = 0.1;
     float h = 1.0/fps;
-    float g = 9.81 * 100; // mètres -> pixel ?
+    float g = 9.81 * 500; // mètres -> pixel ?
     float l = p1.getLongueur() ; // dépend de l'échelle cm -> pixel
 
 
